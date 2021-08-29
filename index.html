@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <!-- tailwind css  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-indigo-300">
+    <!-- header part  -->
+    <header></header>
+
+    <!-- main part  -->
+    <main>
+      <!-- section  -->
+      <section id="section" class="grid grid-cols-3 m-16 w-11/12 mx-auto">
+        <!-- left part  -->
+
+        <div id="left-data" class="col-span-2 flex items-end">
+          <div class="flex justify-start p-8 items-center text-gray-50 mb-16">
+            <!-- tamperature  -->
+            <h2 class="p-4 text-9xl font-bold">
+              <span id="tamperature">16</span><span>&#8451;</span>
+            </h2>
+
+            <!-- city date and time  -->
+            <div class="p-4">
+              <h4 class="text-6xl" id="city">London</h4>
+              <p class="text-2xl mt-2">
+                <span id="time">time</span> - <span id="date">date</span>
+              </p>
+            </div>
+
+            <!-- condition  -->
+            <div class="px-4">
+              <p class="text-4xl" id="condition">Cloudy</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right part  -->
+        <div id="right-data" class="bg-gray-900 bg-opacity-75">
+          <!-- search field  -->
+          <div class="text-lg bg-transparent text-gray-800 ml-16">
+            <div class="grid grid-cols-4 items-center justify-between">
+              <!-- input field  -->
+              <div class="col-span-3 border-b border-b-2 border-teal-500">
+                <input
+                  class="
+                    text-white
+                    font-bold
+                    bg-transparent
+                    border-none
+                    mr-3
+                    px-2
+                    leading-tight
+                    focus:outline-none
+                    mt-8
+                  "
+                  type="text"
+                  placeholder="Search"
+                  id="city-name"
+                />
+              </div>
+
+              <button
+                type="submit"
+                id="search-button"
+                class="
+                  bg-yellow-500
+                  ml-2
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  hover:bg-yellow-600
+                "
+              >
+                <svg
+                  class="h-4 w-4 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 56.966 56.966"
+                  style="enable-background: new 0 0 56.966 56.966"
+                  xml:space="preserve"
+                  width="512px"
+                  height="512px"
+                >
+                  <path
+                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
